@@ -1,0 +1,27 @@
+# Week 6 Assignment: FaceNet Facial Recognition Security System
+# Install all dependencies with:
+#   pip install -r requirements.txt
+#
+# NOTE: keras-facenet requires TensorFlow which does not support Python 3.14.
+#       This project uses facenet-pytorch (PyTorch) instead.
+#       The recognition pipeline is identical; only the underlying library differs.
+
+# PyTorch deep learning framework (CPU version — no CUDA required)
+torch>=2.0.0
+torchvision>=0.15.0
+
+# FaceNet model + MTCNN face detector (PyTorch implementation)
+facenet-pytorch>=2.5.0
+
+# Image processing
+Pillow>=9.0.0
+
+# Webcam capture and image annotation
+opencv-python>=4.8.0
+
+# Numerical computing and distance calculations
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Visualization and output charts
+matplotlib>=3.7.0
