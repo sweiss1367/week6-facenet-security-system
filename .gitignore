@@ -1,0 +1,77 @@
+# =============================================================================
+# BIOMETRIC / PRIVATE IMAGE DATA  (never commit — privacy + GDPR)
+# =============================================================================
+
+# Exclude all raw face images inside authorized_faces/
+# The sub-folder README.md is explicitly re-allowed below
+authorized_faces/*
+!authorized_faces/README.md
+
+# Exclude all raw face images inside test_faces/
+test_faces/*
+!test_faces/README.md
+
+# Exclude the embedding database (derived from biometric images)
+authorized_embeddings.pkl
+
+# =============================================================================
+# AUTO-GENERATED OUTPUT  (regenerable — keep sample_outputs/ instead)
+# =============================================================================
+
+output/
+
+# Explicitly allow the curated sample_outputs/ demo folder
+!sample_outputs/
+!sample_outputs/**
+
+# =============================================================================
+# DOWNLOADED MODEL WEIGHTS  (large binaries, auto-downloaded at runtime)
+# =============================================================================
+
+# TensorFlow / Keras checkpoints and saved models
+*.h5
+*.hdf5
+*.pb
+saved_model/
+
+# PyTorch weights (not used in this project, excluded as precaution)
+*.pt
+*.pth
+
+# Generic weight / checkpoint formats
+*.ckpt
+*.weights
+*.tflite
+
+# =============================================================================
+# PYTHON CACHE
+# =============================================================================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =============================================================================
+# JUPYTER
+# =============================================================================
+
+.ipynb_checkpoints/
+*.ipynb
+
+# =============================================================================
+# VIRTUAL ENVIRONMENTS
+# =============================================================================
+
+venv/
+.venv/
+env/
+.env/
+
+# =============================================================================
+# OPERATING SYSTEM FILES
+# =============================================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
